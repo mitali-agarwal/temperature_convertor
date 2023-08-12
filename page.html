@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        
+        <h1>Temperature Converter</h1>
+        <div class="inputs">
+            <div style="display: flex;
+            flex-direction: column;">
+                <label for="degree">Value </label>
+                <input type="number" name="degree" id="inputValue" required>
+            </div>
+            <div class="inptsss">
+                <div>
+                    <label for="type">From</label>
+                    <select name="type" id="type1">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="rankine">Rankine</option>
+                        <option value="Delisle">Delisle</option>
+                        <option value="Réaumur">Réaumur</option>
+                        <option value="Rømer">Rømer</option>
+                       
+                        
+                    </select>
+                </div>
+                <div>
+                    <label for="type">To</label>
+                    <select name="type" id="type2">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="rankine">Rankine</option>
+                        <option value="Delisle">Delisle</option>
+                        <option value="Réaumur">Réaumur</option>
+                        <option value="Rømer">Rømer</option>
+                        
+                        
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button type="submit" id="btn" onclick="temperature()">Convert</button>
+        <div class="resultss">
+            <label for="result">Result</label>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="jspage.js"></script>
+</body>
+
+</html>
